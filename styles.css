@@ -1,0 +1,167 @@
+html, body {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	height: 100%; /* Ensure the body and html elements take up the full height */
+}
+
+body {
+	background-image: url('rock.jpg'); /* Replace 'your-image.jpg' with your actual image file name */
+	background-size: cover; /* Ensure the image covers the entire background */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Prevent the image from repeating */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.navbar {
+
+	background: linear-gradient(135deg, rgba(57, 57, 57, 0.7), rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.242);
+
+	color: white;
+	padding: 10px 20px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000; /* Ensure navbar is on top */
+}
+
+.navbar-content {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.app-name {
+	font-size: 1.5em;
+}
+
+.current-time {
+	font-size: 1.2em;
+}
+
+
+.menu {
+	height: 100%;
+	width: 80%;
+
+	background: linear-gradient(135deg, rgba(57, 57, 57, 0.7), rgba(255, 255, 255, 0));
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 10px;
+	box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.242);
+
+	margin: 100px auto 20px auto; /* Offset for fixed navbar and centered vertically */
+	padding: 20px;
+	max-width: 700px;
+	max-height: calc(100vh - 150px); /* Set maximum height to enable scrolling within the div */
+	overflow-y: auto; /* Enable vertical scrolling if content exceeds the max height */
+}
+.menu h1{
+	text-align: center;
+}
+.menu2 {
+	text-align: center;
+	margin-bottom: 20px; /* Space at the bottom */
+}
+
+.input-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap; /* Allows wrapping to new lines if necessary */
+	margin-bottom: 10px;
+}
+
+.input-container input {
+	margin: 5px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.btn-grad {
+	background-image: linear-gradient(to right, #00b09b, #96c93d);
+	border: none;
+	padding: 10px 20px;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-image 0.3s ease;
+	display: inline-block; /* Ensures button is inline with inputs */
+	margin: 5px;
+}
+
+.btn-grad:hover {
+	background-image: linear-gradient(to right, #96c93d, #00b09b);
+}
+
+.btn-red {
+	background-color: #e74c3c; /* Red color for delete all button */
+	border: none;
+	padding: 10px 20px;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-top: 10px; /* Adds margin above button */
+	display: block; /* Ensures button is on a new line */
+	margin: 0 auto; /* Center the button horizontally */
+}
+
+.btn-red:hover {
+	background-color: #c0392b; /* Darker red for hover effect */
+}
+
+.dessert {
+	display: flex;
+	align-items: center;
+	justify-content: space-between; /* Add this to space out elements */
+}
+
+.dessert a {
+	color: white; /* Set the text color to white */
+	text-decoration: none; /* Remove underline from links */
+	margin-right: auto; /* Push the buttons to the right */
+	transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.dessert a:hover {
+	color: #f0f0f0; /* Slightly different white for hover effect */
+}
+
+.dessert button {
+	margin-left: 5px;
+	background-color: #ff9800;
+	border: none;
+	padding: 5px 10px;
+	color: white;
+	text-transform: uppercase;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.dessert button:hover{
+	background-color: #e68900;
+}
+/* 
+.dessert .delete{
+	background-color: #e74c3c;
+}
+.dessert .delete:hover{
+	background-color: #c0392b;
+} */
