@@ -1,47 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>WebKeep</title>
-	<link href="styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebKeep</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-	<header class="navbar">
-		<div class="navbar-content">
-			<span class="app-name">WebKeep</span>
-			<span class="current-time" id="currentTime"></span>
-		</div>
-	</header>
-	
-	<div class="menu">
-		<header>
-			<h1>Must-have Links</h1>
-		</header>
-		<hr>
-		<main>
-			<section>
-				<article class="item">
-					<p class="dessert">
-						<a href="https://github.com/">GitHub</a>
-						<button class="edit" onclick="editLink(this)">Edit</button>
-						<button class="delete" onclick="deleteLink(this)">Delete</button>
-					</p>
-				</article>
-			</section>
-		</main>
-		<hr>
-		<footer>
-		</footer>
-	</div>
-	<div class="menu2">
-		<div class="input-container">
-			<input type="text" id="linkName" placeholder="Link Name">
-			<input type="text" id="linkURL" placeholder="Link URL">
-			<button class="btn-grad" onclick="addLink()">Add a Link</button>
-		</div>
-		<button class="btn-red" onclick="deleteAllLinks()">Delete All</button>
-	</div>
-<script src="script.js"></script>
+    <header class="navbar">
+        <div class="navbar-content">
+            <span class="app-name">WebKeep</span>
+            <span class="current-time" id="currentTime"></span>
+        </div>
+    </header>
+    
+    <div class="menu">
+        <header>
+            <h1>Must-have Links</h1>
+        </header>
+        <hr>
+        <main>
+            <section id="linkSection">
+                <!-- Links will be added here -->
+            </section>
+        </main>
+        <hr>
+        <footer></footer>
+    </div>
+    <div class="menu2">
+        <div class="input-container">
+            <input type="text" id="linkName" placeholder="Link Name">
+            <input type="text" id="linkURL" placeholder="Link URL">
+            <button class="btn-grad" onclick="addLink()">Add a Link</button>
+        </div>
+        <button class="btn-red" onclick="deleteAllLinks()">Delete All</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
